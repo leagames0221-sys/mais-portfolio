@@ -1,0 +1,28 @@
+# credentials / secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python (in case landing page assets use any tooling)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# logs
+*.log
