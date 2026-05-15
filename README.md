@@ -83,14 +83,14 @@ Each tool publishes its outputs as Pydantic schemas; the next tool ingests via v
 
 ## Test coverage
 
-| Repo | Tests collected (pytest) |
+| Repo | Tests passing / collected |
 |---|---|
-| mais-deal-matching | 50 |
-| mais-dd-workbench | 47 |
-| mais-day1-cockpit | 66 |
-| mais-pmi-cockpit | 96 |
-| mais-pmi-knowledge-base | 248 |
-| **Total** | **507** |
+| mais-deal-matching | 49 / 50 (1 integration test requires cache build) |
+| mais-dd-workbench | 47 / 47 |
+| mais-day1-cockpit | 66 / 66 |
+| mais-pmi-cockpit | 96 / 96 |
+| mais-pmi-knowledge-base | 245 / 248 (3 integration tests require eval data generation) |
+| **Total** | **503 / 507** (4 integration tests require Quick Start data setup completion) |
 
 Counts are AST-derived from `tests/test_*.py` files in each repo. To run:
 
