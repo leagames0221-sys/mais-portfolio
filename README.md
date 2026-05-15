@@ -5,7 +5,7 @@
 
 [![tools](https://img.shields.io/badge/tools-5-blueviolet)]()
 [![python](https://img.shields.io/badge/python-3.11+-blue)]()
-[![pip-audit](https://img.shields.io/badge/pip--audit-0%20CVE-brightgreen)]()
+[![5 tools CI](https://img.shields.io/badge/5%20tools%20CI-pip--audit%20on%20push-brightgreen)](https://github.com/leagames0221-sys?tab=repositories&q=mais)
 [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 ---
@@ -71,11 +71,11 @@ Each tool publishes its outputs as Pydantic schemas; the next tool ingests via v
 
 | Principle | How it shows up |
 |---|---|
-| **Security first** | python-ml-stack 5-layer defense (pinned versions / pip-audit `--strict` / Dependabot weekly / lock-file commit / Dependency Review on PR) |
+| **Security-aware dependencies** | Pinned versions in `requirements*.txt`; lock files committed where applicable; CI integration (pip-audit `--strict`, Dependabot, Dependency Review) is a deployment-time addition for client engagements rather than a portfolio-side claim |
 | **PII discipline** | Vault Pattern (Fernet at rest + audit log append-only); embedding/matching never sees raw PII |
 | **No vendor lock-in** | Anthropic API + OSS only; LLMProvider Protocol (3 methods) lets you swap to Ollama / Gemini / self-hosted in one file |
 | **Citation everywhere** | Every LLM-generated answer carries source link-backs (page / cell / bbox metadata for Docling chunks) |
-| **Drift prevention** | GitHub Issues + Projects + linked PRs + drift CI; Spec-Driven Workflow (Discovery → Requirements → Design → Tasks) |
+| **Spec-Driven Workflow** | Discovery → Requirements → Design → Tasks; module-boundary discipline enforced at code-review time; full drift-prevention infrastructure (GitHub Issues + Projects + linked PRs + CI checks) is added when an engagement begins |
 | **Consumer-laptop runnable** | Every tool runs end-to-end on a single laptop with synthetic data; no GPU required for PoC scope |
 | **Synthetic data only** | All tools ship with Faker (ja_JP)-driven synthetic data; no real PII / real engagements in any repo |
 
@@ -87,10 +87,10 @@ Each tool publishes its outputs as Pydantic schemas; the next tool ingests via v
 |---|---|
 | mais-deal-matching | 50 |
 | mais-dd-workbench | 47 |
-| mais-day1-cockpit | 89 |
+| mais-day1-cockpit | 66 |
 | mais-pmi-cockpit | 96 |
 | mais-pmi-knowledge-base | 248 |
-| **Total** | **530** |
+| **Total** | **507** |
 
 Counts are AST-derived from `tests/test_*.py` files in each repo. To run:
 
