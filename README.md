@@ -3,6 +3,7 @@
 > **Five AI tools that automate the entire M&A lifecycle for Japanese mid-market deals**:
 > sourcing → due diligence → Day-1 readiness → 100-day PMI → cross-engagement knowledge layer.
 
+[![status](https://img.shields.io/badge/status-PoC%20portfolio-orange)](#status)
 [![tools](https://img.shields.io/badge/tools-5-blueviolet)]()
 [![python](https://img.shields.io/badge/python-3.11+-blue)]()
 [![5 tools CI](https://img.shields.io/badge/5%20tools%20CI-pip--audit%20on%20push-brightgreen)](https://github.com/leagames0221-sys?tab=repositories&q=mais)
