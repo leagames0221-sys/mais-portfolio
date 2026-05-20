@@ -114,7 +114,7 @@ Slate scale (~95% neutral) + warm amber accent (~5%) on off-white background. Go
 
 ## Status
 
-**PoC portfolio**. Each tool is functionally complete with synthetic data + commercial-grade hardening foundation in place. For production deployment to a client engagement:
+**PoC portfolio**. Each tool is functionally complete on synthetic data, with security-aware design choices documented per repo. For production deployment to a client engagement:
 
 - Sandbox setup (Docker / WSL2 / Codespaces) for real PII / real documents
 - Customer sandbox dry-run + 1-week stability before cutover
